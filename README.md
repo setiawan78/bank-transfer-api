@@ -13,38 +13,56 @@ Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang grati
 # Instalasi
 1. Clone repository ini Clone repository ini dengan memilih tipe protokol HTTPS atau SSH. Jika belum memiliki setup SSH, bisa menggunakan HTTPS.
     
+    ```bash
     git clone https://github.com/setiawan78/bank-transfer-api.git
+    ```
     
+    ```bash
     cd bank-transfer-api
+    ```
 
 2. Install dependencies
     
+    ```bash
     composer install
+    ```
 
+    ```bash
     composer require tymon/jwt-auth
+    ```
 
 
 3. Set up Konfigurasi Laravel
 
+    ```bash
     copy .env.example .env
+    ```
 
 4. Membuat Database baru
-Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama bank-transfer-api.
+Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama ```bash bank-transfer-api ```.
 
 5. Setting Database di .env
 Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file bernama .env Ubah nilai database menjadi seperti :
 
+    ```bash
     DB_DATABASE=bank-transfer-api
+    ```
 
 6. Publikasikan konfigurasi JWT:
 
+    ```bash
     php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+    ```
     
+    ```bash
     php artisan jwt:secret
+    ```
 
 7. database dan lakukan seeding
 
+    ```bash
     php artisan migrate --seed
+    ```
 
 
 # User Credential
