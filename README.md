@@ -10,7 +10,7 @@ Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang grati
 4. Visual Studio Code
 5. Postman
 
-#instalasi
+# Instalasi
 1. Clone repository ini Clone repository ini dengan memilih tipe protokol HTTPS atau SSH. Jika belum memiliki setup SSH, bisa menggunakan HTTPS.
     
     git clone https://github.com/setiawan78/bank-transfer-api.git
