@@ -58,7 +58,7 @@ Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file b
     php artisan jwt:secret
     ```
 
-7. database dan lakukan seeding
+7. Migrate Database dan lakukan seeding
 
     ```bash
     php artisan migrate --seed
