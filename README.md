@@ -63,7 +63,12 @@ Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file b
     ```bash
     php artisan migrate --seed
     ```
+    
+8. Serve Aplikasi
 
+   ```bash
+    php artisan serve
+    ```
 
 # User Credential
 1. User
