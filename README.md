@@ -88,5 +88,5 @@ Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file b
     Password : 12345678
 
 # Database Backup
-Nama File : ```bash bank-transfer-api.sql ```
+Nama File : ```bash bank-transfer-api.sql ``` 
 
