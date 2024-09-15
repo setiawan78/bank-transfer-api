@@ -1,66 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Sistem Rest API Sederhana Bank Transfer
 
-## About Laravel
+Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang gratis antar bank, dimana bank pengirim dan bank yang menjadi tujuan transfer masing-masing telah terdaftar dalam sistem.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Tools yang dibutuhkan :
+1. Xampp, menggunakan PHP 8.1
+2. Composer, menggunakan 2.2.0 atau yang lebih tinggi. untuk file & tutorial instalasi dapat diakses pada https://getcomposer.org/download/
+3. Laravel, Saya menggunakan laravel 10.0. Tutorial instalasi dapat diakses pada https://laravel.com/docs/10.x/installation
+4. Visual Studio Code
+5. Postman
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#instalasi
+1. Clone repository ini Clone repository ini dengan memilih tipe protokol HTTPS atau SSH. Jika belum memiliki setup SSH, bisa menggunakan HTTPS.
+    
+    git clone https://github.com/setiawan78/bank-transfer-api.git
+    
+    cd bank-transfer-api
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2. Install dependencies
+    
+    composer install
 
-## Learning Laravel
+    composer require tymon/jwt-auth
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3. Set up Konfigurasi Laravel
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+    copy .env.example .env
 
-## Laravel Sponsors
+4. Membuat Database baru
+Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama bank-transfer-api.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+5. Setting Database di .env
+Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file bernama .env Ubah nilai database menjadi seperti :
 
-### Premium Partners
+    DB_DATABASE=bank-transfer-api
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+6. Publikasikan konfigurasi JWT:
 
-## Contributing
+    php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+    
+    php artisan jwt:secret
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+7. database dan lakukan seeding
 
-## Code of Conduct
+    php artisan migrate --seed
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+# User Credential
+1. User
+    
+    Name : PT Bos COD Indonesia
+    
+    Email : user@boscod.com
+    
+    Password : rahasia
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. User
+    
+    Name : Indra Setiawan
+    
+    Email : stiwanindra536@gmail.com
+    
+    Password : 12345678
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
