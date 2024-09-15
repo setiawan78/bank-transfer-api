@@ -39,7 +39,7 @@ Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang grati
     ```
 
 4. Membuat Database baru
-Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama ```bash bank-transfer-api ```.
+Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama ``` bank-transfer-api ```.
 
 5. Setting Database di .env
 Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file bernama .env Ubah nilai database menjadi seperti :
@@ -88,5 +88,5 @@ Buka folder project yang dibuat di text editor yang digunakan, lalu pilih file b
     Password : 12345678
 
 # Database Backup
-Nama File : ```bash bank-transfer-api.sql ``` 
+Nama File : ``` bank-transfer-api.sql ``` 
 
