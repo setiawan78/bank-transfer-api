@@ -38,6 +38,10 @@ Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang grati
     copy .env.example .env
     ```
 
+    ```bash
+    php artisan key:generate
+    ```
+
 4. Membuat Database baru
 Untuk membuat database baru, aktifkan xampp terlebih dahulu. Kemudian buat database dengan nama ``` bank-transfer-api ```.
 
