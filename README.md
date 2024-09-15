@@ -5,7 +5,7 @@ Sebuah Sistem Rest API Sederhana yang akan digunakan untuk pengiriman uang grati
 
 # Tools yang dibutuhkan :
 1. Xampp, menggunakan PHP 8.1
-2. Composer, menggunakan 2.2.0 atau yang lebih tinggi. untuk file & tutorial instalasi dapat diakses pada https://getcomposer.org/download/
+2. Composer, menggunakan minimal versi 2.2.0 atau yang lebih tinggi. untuk file & tutorial instalasi dapat diakses pada https://getcomposer.org/download/
 3. Laravel, Saya menggunakan laravel 10.0. Tutorial instalasi dapat diakses pada https://laravel.com/docs/10.x/installation
 4. Visual Studio Code
 5. Postman
